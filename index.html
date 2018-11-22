@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anshul's Website</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans|Rajdhani|Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#main-title">Anshul Patel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#experience">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+
+  <div class="Main-title" id="main-title" style="background-image: url(./Pictures/background6.jpg);">
+    <div class="imagestyled">
+      <img src="./Pictures/20170713_131533.jpg" id="profilePic">
+    </div>
+    <h1 class="animated slideInLeft" align="center" id="description">Computer Engineer, Developer, Ryerson University</h1>
+    <p class="animated slideInLeft" id="quote">"The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself. -Mark Caine"</p>
+    <div class="graph-cont">
+      <div class="bar bar1">Java</div>
+      <div class="bar bar2">HTML/CSS/JS</div>
+      <div class="bar bar3">Node.js</div>
+      <div class="bar bar4">React.js</div>
+      <div class="bar bar5">Perl/Bash</div>
+    </div>
+  </div>
+
+	<section id="experience" style="background: #bfbfbf;">
+    <h1 id="section-title" style="font-family: 'Rajdhani', sans-serif;">My Experience</h1>
+		<div class="job">
+        <h1 class="company">IBM</h1> 
+        <h3 class="duration-location">(May, 2018 - September, 2019) | Markham, ON</h3>
+        <h3 class="job-title">Software Developer: WebSphere Application Server</h3>
+        <div class="job-description">
+          <p class="tag">- Did this</p>
+          <p class="tag">-Did that</p>
+          <p class="tag">-Gang shit</p>
+        </div>
+    </div>
+    <div class="job">
+        <h1 class="company">Ryerson University</h1>
+        <h3 class="duration-location">(May, 2017 - September, 2017) | Toronto, ON</h3>
+        <h3 class="job-title">Research Assistant</h3>
+        <div class="job-description">
+          <p class="tag">-Worked under Ph.D student to research data transfer algorithms for IOT's</p>
+          <p class="tag">-Built a network simulator with Matlab/Simulink to test the functionality of WSN's and optimize their functionality</p>
+          <p class="tag">-Simulated and enhanced optimization algorithms and worked on creating one of our own using the M.C.T.S AI</p>
+          <p class="tag">-Learned about the OSI Model, TCP/IP Model, 6LowPan, Zigbee, LEACH, and various algorithms </p>
+        </div>
+    </div>
+	</section>
+
+  <section id="projects" style="background: #e6e6e6;">
+    <h1 id="section-title" style="font-family: 'Rajdhani', sans-serif;">Projects</h1>
+    <div class="w3-content w3-display-container" id="sliderDiv">
+      <img class="mySlides" src="./Pictures/background2.jpg" style="width:100%; height: 600px;">
+      <img class="mySlides" src="./Pictures/background3.jpg" style="width:100%; height: 600px;">
+      <img class="mySlides" src="./Pictures/background4.jpg" style="width:100%; height: 600px;">
+      <img class="mySlides" src="./Pictures/background5.jpg" style="width:100%; height: 600px;">
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1 id="section-title" style="font-family: 'Rajdhani', sans-serif;">Contact Me!</h1>
+    <div class="contact-me-btns">
+      <button class="contact-button"><i class="fas fa-at"></i> Email</button>
+      <button id="github-button" class="contact-button"><i class="fab fa-github"></i> GitHub</button>
+      <button id="linked-in-button" class="contact-button"><i class="fab fa-linkedin"></i> LinkedIn</button>
+      <button class="contact-button"><i class="fas fa-file"></i> Resume</button>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="./index.js"></script>
+</html>
